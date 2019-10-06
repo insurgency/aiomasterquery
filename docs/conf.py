@@ -3,6 +3,7 @@ project = 'aiomasterquery'
 copyright = '2019, insurgency.gg'
 author = 'insurgency.gg'
 extensions = [
+    'sphinx.ext.autodoc',
     'sphinx.ext.extlinks',
 ]
 templates_path = ['_templates']
