@@ -1,0 +1,32 @@
+#! /usr/bin/env python3
+
+from setuptools import setup, find_packages
+
+setup(
+    name='aioamasterquery',
+    version=None,  # TODO
+    author='insurgency.gg',
+    url='https://github.com/insurgency/aioamasterquery',
+    packages=find_packages(
+        exclude=[
+            'tests',
+        ],
+    ),
+    classifiers=[
+    ],
+    license='MIT',
+    python_requires='>=3.7',
+    test_suite='tests',
+    extras_require={
+        'speedups': [
+            'uvloop',
+        ],
+    },
+    # Automatic Script Creation
+    # See: https://setuptools.readthedocs.io/en/latest/setuptools.html#automatic-script-creation
+    entry_points={
+        'console_scripts': [
+            # TODO
+        ],
+    },
+)
