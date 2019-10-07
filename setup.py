@@ -32,6 +32,9 @@ setup(
     license='MIT',
     python_requires='>=3.7',
     test_suite='tests',
+    install_requires=[
+        'git+https://github.com/insurgency/aioa2squery.git@5c9b43e37c78534b2074e5be8e736b6149c727ff#egg=aioa2squery',
+    ],
     extras_require={
         'speedups': [
             'uvloop',

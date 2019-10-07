@@ -7,6 +7,7 @@ verify_ssl = true
 sphinx = "*"
 
 [packages]
+aioa2squery = {git = "https://github.com/insurgency/aioa2squery.git",ref = "5c9b43e37c78534b2074e5be8e736b6149c727ff"}
 
 [requires]
 python_version = "3.7"

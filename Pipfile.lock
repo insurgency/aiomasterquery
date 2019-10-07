@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e0f88d20df2ff4c68b538828f74230f5d3f435217db56cb52cb2cc5cb892a1cf"
+            "sha256": "7bd1ce19f1d030362a1f5c66f0ff45de072f977fdc60c26120e3d48f64826507"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -15,7 +15,12 @@
             }
         ]
     },
-    "default": {},
+    "default": {
+        "aioa2squery": {
+            "git": "https://github.com/insurgency/aioa2squery.git",
+            "ref": "5c9b43e37c78534b2074e5be8e736b6149c727ff"
+        }
+    },
     "develop": {
         "alabaster": {
             "hashes": [
