@@ -15,3 +15,4 @@ extlinks = {
     'steam-app': ('https://store.steampowered.com/app/%s', 'app-id'),
     'wikipedia': ('https://wikipedia.org/wiki/%s', 'page'),
 }
+autodoc_member_order = 'bysource'
