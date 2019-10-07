@@ -6,3 +6,5 @@ Enumerations
 
 .. autoclass:: aiomasterquery.MasterServer
     :members:
+.. autoclass:: aiomasterquery.RegionCode
+    :members:

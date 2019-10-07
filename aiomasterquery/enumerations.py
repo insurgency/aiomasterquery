@@ -1,7 +1,8 @@
-from enum import Enum
+from enum import Enum, unique, IntEnum
 
 __all__ = (
     'MasterServer',
+    'RegionCode',
 )
 
 
@@ -36,3 +37,27 @@ class MasterServer(Enum):
     SIN_1_MULTIPLAYER = ('69.28.151.162', 27010)
     # TODO: verify if this is true
     """Master query server for :steam-app:`SiN 1 Multiplayer <1300>`"""
+
+
+@unique
+class RegionCode(IntEnum):
+    """Enumeration of different regions of the world that you wish to find servers in."""
+
+    US_EAST_COAST = 0x00
+    """:wikipedia:`US East coast <East_Coast_of_the_United_States>`"""
+    US_WEST_COAST = 0x01
+    """:wikipedia:`US West coast <West_Coast_of_the_United_States>`"""
+    SOUTH_AMERICA = 0x02
+    """:wikipedia:`South America <South_America>`"""
+    EUROPE = 0x03
+    """:wikipedia:`Europe <Europe>`"""
+    ASIA = 0x04
+    """:wikipedia:`Asia <Asia>`"""
+    AUSTRALIA = 0x05
+    """:wikipedia:`Australia <Australia>`"""
+    MIDDLE_EAST = 0x06
+    """:wikipedia:`Middle East <Middle_East>`"""
+    AFRICA = 0x07
+    """:wikipedia:`Africa <Africa>`"""
+    REST_OF_THE_WORLD = 0xFF
+    """Rest of the world"""
