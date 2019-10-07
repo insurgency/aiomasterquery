@@ -12,4 +12,5 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
 extlinks = {
     'valve-wiki': ('https://developer.valvesoftware.com/wiki/%s', 'page'),
+    'steam-app': ('https://store.steampowered.com/app/%s', 'app-id'),
 }
