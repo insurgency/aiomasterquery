@@ -5,6 +5,7 @@ author = 'insurgency.gg'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.extlinks',
+    'sphinx.ext.intersphinx',
 ]
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -16,3 +17,6 @@ extlinks = {
     'wikipedia': ('https://wikipedia.org/wiki/%s', 'page'),
 }
 autodoc_member_order = 'bysource'
+intersphinx_mapping = {
+    'dj': ('https://docs.djangoproject.com/en/stable/', 'https://docs.djangoproject.com/en/stable/_objects/'),
+}
