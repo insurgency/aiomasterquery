@@ -2,7 +2,7 @@ from enum import Enum, unique, IntEnum
 
 __all__ = (
     'MasterServer',
-    'RegionCode',
+    'Region',
 )
 
 
@@ -40,7 +40,7 @@ class MasterServer(Enum):
 
 
 @unique
-class RegionCode(IntEnum):
+class Region(IntEnum):
     """Enumeration of different regions of the world that you wish to find servers in."""
 
     US_EAST_COAST = 0x00
